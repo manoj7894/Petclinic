@@ -16,7 +16,7 @@ spec:
     spec:
       terminationGracePeriodSeconds: 30
       containers:
-      - name: swiggy-app
+      - name: petclinic-app
         image: manoj3003/database:2
         imagePullPolicy: "Always"
         ports:
