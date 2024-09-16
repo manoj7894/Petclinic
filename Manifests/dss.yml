@@ -17,7 +17,7 @@ spec:
       terminationGracePeriodSeconds: 30
       containers:
       - name: petclinic-app
-        image: manoj3003/petclinic:7
+        image: manoj3003/petclinic:8
         imagePullPolicy: "Always"
         ports:
         - containerPort: 8082
