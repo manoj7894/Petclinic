@@ -17,7 +17,7 @@ spec:
       terminationGracePeriodSeconds: 30
       containers:
       - name: swiggy-app
-        image: manoj3003/pipelie-cicd:2
+        image: manoj3003/petclinic:2
         imagePullPolicy: "Always"
         ports:
         - containerPort: 8082
