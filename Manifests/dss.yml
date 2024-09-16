@@ -1,22 +1,22 @@
 apiVersion: apps/v1
 kind: Deployment
 metadata:
-  name: swiggy-app
+  name: petclinic-app
   labels:
-    app: swiggy-app
+    app: petclinic-app
 spec:
-  replicas: 2
+  replicas: 1
   selector:
     matchLabels:
-      app: swiggy-app
+      app: petclinic-app
   template:
     metadata:
       labels:
-        app: swiggy-app
+        app: petclinic-app
     spec:
       terminationGracePeriodSeconds: 30
       containers:
-      - name: swiggy-app
+      - name: petclinic-app
         image: manoj3003/petclinic:2
         imagePullPolicy: "Always"
         ports:
